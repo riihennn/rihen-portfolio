@@ -7,11 +7,11 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { name: 'GitHub', Icon: Github, href: '#', color: 'hover:text-white' },
-    { name: 'LinkedIn', Icon: Linkedin, href: '#', color: 'hover:text-blue-400' },
-    { name: 'Twitter', Icon: Twitter, href: '#', color: 'hover:text-sky-400' },
-    { name: 'Instagram', Icon: Instagram, href: '#', color: 'hover:text-pink-400' },
-    { name: 'Email', Icon: Mail, href: 'mailto:rihen@example.com', color: 'hover:text-orange-400' }
+    { name: 'GitHub', Icon: Github, href: 'https://github.com/riihennn', color: 'hover:text-white' },
+    { name: 'LinkedIn', Icon: Linkedin, href: 'https://www.linkedin.com/in/rihenkrishna/', color: 'hover:text-white' },
+    { name: 'Twitter', Icon: Twitter, href: 'https://x.com/riihennn', color: 'hover:text-white' },
+    { name: 'Instagram', Icon: Instagram, href: 'https://www.instagram.com/riihennn/', color: 'hover:text-white' },
+    { name: 'Email', Icon: Mail, href: 'mailto:rihenww@gmail.com', color: 'hover:text-white' }
   ];
 
   const quickLinks = [
@@ -44,9 +44,6 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-600/30 to-amber-700/30 backdrop-blur-md flex items-center justify-center border border-orange-600/40">
-                  <span className="text-neutral-100 font-bold text-lg leading-none">{'<>'}</span>
-                </div>
                 <div>
                   <h3 className="text-neutral-100 font-bold text-xl">RIHEN KRISHNA</h3>
                   <p className="text-neutral-400 text-sm">MERN Stack Developer</p>
@@ -64,7 +61,7 @@ export default function Footer() {
                     <a
                       key={index}
                       href={social.href}
-                      className={`w-10 h-10 rounded-full bg-neutral-800/50 backdrop-blur-md flex items-center justify-center border border-neutral-700/50 text-neutral-400 ${social.color} hover:scale-110 hover:border-orange-500/50 transition-all duration-300`}
+                      className={`w-10 h-10 rounded-full bg-neutral-800/50 backdrop-blur-md flex items-center justify-center border border-neutral-700/50 text-neutral-400 ${social.color} hover:scale-110 hover:border-white transition-all duration-300`}
                       aria-label={social.name}
                     >
                       <Icon className="w-5 h-5" />
@@ -85,7 +82,7 @@ export default function Footer() {
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-neutral-400 hover:text-orange-400 hover:translate-x-2 inline-block transition-all duration-300"
+                      className="text-neutral-400 hover:text-white hover:translate-x-2 inline-block transition-all duration-300"
                     >
                       {link.name}
                     </a>
@@ -104,7 +101,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:rihen@example.com"
-                    className="text-neutral-400 hover:text-orange-400 transition-colors duration-300 flex items-start space-x-3"
+                    className="text-neutral-400 hover:text-white transition-colors duration-300 flex items-start space-x-3"
                   >
                     <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                     <span>rihenww@gmail.com</span>
@@ -126,7 +123,7 @@ export default function Footer() {
         <div className="border-t border-neutral-800/50 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-neutral-400 text-sm text-center md:text-left">
-              © 2025 Rihen Krishna. All rights reserved. Made with <Heart className="w-4 h-4 inline-block text-red-500 animate-pulse" /> and React
+              © 2025 Rihen Krishna. All rights reserved. Made with and React
             </p>
             <button
               onClick={scrollToTop}

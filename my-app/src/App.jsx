@@ -1,4 +1,4 @@
-import React from 'react'
+import LenisSmoothScroll from "./components/LenisScroll"
 import Navbar from './components/Navbar'
 import HomePage from './components/Home'
 import AboutSection from './components/About'
@@ -25,6 +25,7 @@ function App() {
 
       
       {/* Your sections WITHOUT backgrounds */}
+      <LenisSmoothScroll>
       <Navbar />
       <HomePage />
       <AboutSection />
@@ -32,6 +33,8 @@ function App() {
       <ProjectsSection />
       <ContactSection />
       <Footer />
+      </LenisSmoothScroll>
+
     </div>
   );
 }

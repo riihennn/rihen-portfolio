@@ -1,16 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export default function HomePage() {
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
-      
-
-
       {/* 🔥 Updated container spacing (left & right gap perfect) */}
       <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-24 xl:px-24 pt-40 pb-20 relative z-10">
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-2">
@@ -29,15 +24,49 @@ export default function HomePage() {
             </div>
 
             <p className="text-neutral-400 text-lg max-w-xl leading-relaxed">
-              Building full-stack applications with MongoDB, Express, React, and Node.js.
-              Transforming ideas into scalable, high-performance web solutions.
+              Building full-stack applications with MongoDB, Express, React, and
+              Node.js. Transforming ideas into scalable, high-performance web
+              solutions.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="px-8 py-4 bg-neutral-100 text-black font-semibold rounded hover:bg-neutral-200 transition-all duration-300 transform hover:scale-105">
+              <button
+                onClick={() => {
+                  if (window.lenis) {
+                    window.lenis.scrollTo("#projects", {
+                      offset: -90, // navbar height
+                      duration: 1,
+                    });
+                  } else {
+                    document
+                      .getElementById("projects")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="px-8 py-4 bg-neutral-100 text-black font-semibold rounded
+             hover:bg-neutral-200 transition-all duration-300
+             transform hover:scale-105"
+              >
                 VIEW PROJECTS
               </button>
-              <button className="px-8 py-4 bg-transparent text-neutral-200 font-semibold rounded border-2 border-neutral-700 hover:border-neutral-500 hover:bg-neutral-800/50 transition-all duration-300">
+
+              <button
+                onClick={() => {
+                  if (window.lenis) {
+                    window.lenis.scrollTo("#contact", {
+                      offset: -90, // navbar height
+                      duration: 1,
+                    });
+                  } else {
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="px-8 py-4 bg-transparent text-neutral-200 font-semibold rounded
+             border-2 border-neutral-700 hover:border-neutral-500
+             hover:bg-neutral-800/50 transition-all duration-300"
+              >
                 GET IN TOUCH
               </button>
             </div>
@@ -51,23 +80,17 @@ export default function HomePage() {
                   <span className="text-neutral-100 font-bold text-6xl"></span>
                 </div>
                 <div className="space-y-1">
-                  <h2 className="text-neutral-100 font-bold text-3xl tracking-wider">RIHEN KRISHNA</h2>
-                  <h2 className="text-neutral-400 font-bold text-2xl tracking-wider">Developer</h2>
+                  <h2 className="text-neutral-100 font-bold text-3xl tracking-wider">
+                    RIHEN KRISHNA
+                  </h2>
+                  <h2 className="text-neutral-400 font-bold text-2xl tracking-wider">
+                    Developer
+                  </h2>
                 </div>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="bg-neutral-800/30 backdrop-blur-md border border-neutral-700/50 rounded-lg p-6 hover:bg-neutral-800/50 transition-all duration-300">
-                <h3 className="text-5xl font-bold text-neutral-100 mb-2">50+</h3>
-                <p className="text-neutral-400">Projects Completed</p>
-              </div>
-
-              <div className="bg-neutral-800/30 backdrop-blur-md border border-neutral-700/50 rounded-lg p-6 hover:bg-neutral-800/50 transition-all duration-300">
-                <h3 className="text-5xl font-bold text-neutral-100 mb-2">5+</h3>
-                <p className="text-neutral-400">Years Experience</p>
-              </div>
-            </div>
+            <div className="space-y-4"></div>
           </div>
         </div>
 
